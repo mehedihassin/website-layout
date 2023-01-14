@@ -6,16 +6,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log-in Form</title>
+    <script src="https://kit.fontawesome.com/5f9102bf02.js" crossorigin="anonymous"></script>
+
 </head>
 
+<style>
+    .login-content {
+        display: flex;
+        justify-content: center;
+    }
+
+    .login-form {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .login-form input,
+    button {
+        font: size 4em;
+        ;
+        margin-top: 5px;
+        padding: 5px;
+        border-radius: 3px;
+        border: 2px solid lightgray;
+
+
+    }
+
+    .login-form button {
+        background-color: rgb(233, 183, 91);
+    }
+
+    #reset-button {
+        background-color: rgb(219, 108, 108);
+    }
+
+    #reset-button:hover {
+        background-color: lightslategray;
+    }
+
+    .login-form button:hover {
+        background-color: lightgray;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: black;
+        margin-right: 10px;
+    }
+</style>
+
 <body>
-    <h1>Log-in</h1>
-    <form action="" class="login-containt">
-        <input type="email" placeholder="Enter Your Email" required>
-        <input type="password" placeholder="Enter your Password" required>
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
-    </form>
+    <header>
+        <nav>
+            <span>
+                <a href="">Home</a>
+                <a href="">Products</a>
+                <a href="">Diraction</a>
+                <a href="">Map</a>
+                <a href="">About us</a>
+            </span>
+            <span>
+                <a href=""><i class="fa-regular fa-user"></i></i></a>
+                <a href=""><i class="fa-solid fa-right-from-bracket"></i></i></a>
+            </span>
+
+
+        </nav>
+    </header>
+    <section class="login-content">
+
+
+        <form action="" class="login-form">
+            <h1>Log-in</h1>
+
+
+            <input type="email" placeholder="Enter Your Email" required>
+            <input type="password" placeholder="Enter your Password" required>
+            <button type="submit">Submit</button>
+            <button id="reset-button" type="reset">Reset</button>
+        </form>
+    </section>
+
 </body>
 
 </html>
